@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <link rel="stylesheet" href="cobacoba.css">
+    <style>
+        body {
+  color: black;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 id="productTitle"></h2>
+    <img id="productImage" src="" alt="Product Image" class="product-image">
+    <p><strong>Manfaat:</strong> <span id="productManfaat"></span></p>
+    <p><strong>Panduan:</strong> <span id="productPanduan"></span></p>
+    <a id="productLink" href="" target="_blank">Beli Sekarang</a>
+</div>
+
+<script>
+    // Data produk (untuk sementara, data di hardcode di sini juga)
+    const products = [
+        {
+            id: 1,
+            title: "Pupuk Grow more",
+            manfaat: [
+                "Mempercepat pertumbuhan akar pada pembibitan.",
+                "Mempercepat pertumbuhan bunga pada tanaman.",
+                "Meningkatkan pertumbuhan tanaman.",
+            ],
+            panduan: [
+                    "Larutkan 1-2 g dalam satu liter air.",
+                    "Semprotkan pada seluruh bagian tanaman, terutama daunnya. Larutan tersebut dapat pula disiramkan sebanyak 250 ml/tanaman ke perakaran tanaman, lakukan penyemprotan atau penyiraman pada pagi atau sore hari tiap 5-10 hari sekali.",
+            ],
+            image: "gambar pupuk/pupuk npk grow more.jpg",
+            link: "https://id.shp.ee/oHF18Kj"
+        },
+        {
+            id: 2,
+            title: "Pupuk Mutiara",
+            manfaat: [
+                "Pupuk ini juga mengandung Amonium-Nitrogen (NH4), yang secara perlahan tersedia sebagai cadangan.",
+                "respon pertumbuhan tanaman lebih cepat dan hasil panen lebih banyak.",
+                "mengurangi kehilangan hara ke lingkungan.",
+            ],
+            panduan:  [
+                 "Gali tanah dengan baik sebelum tabur pupuk, termasuk juga membersihkan area di sekitarnya dari sisa-sisa tanaman sebelumnya.",
+                 "Ambil 1/2  hingga 1 sendok teh, atau sesuaikan dosis pupuk sesuai dengan jenis tanaman, usia tanaman, dan kebutuhan nutrisinya. Dosis yang tepat akan memastikan tanaman mendapatkan nutrisi yang cukup tanpa overdosis yang berpotensi merusak.",
+                 "Taburkan bulir Pupuk NPK Mutiara 16-16-16 secara merata di sekitar tanaman atau area yang ingin kamu pupuk. Pastikan untuk menjaga jarak antara pupuk agar distribusinya seragam.",
+                 "Setelah menyebarkan pupuk, gemburkan tanah secara ringan untuk membantu nutrisi meresap ke dalam tanah dan akar tanaman.",
+                 "Setelah pemberian pupuk, siram tanaman dengan air secara merata. Hal ini membantu larutan pupuk meresap dengan baik ke dalam tanah dan mempercepat penyerapan nutrisi oleh akar tanaman.",
+                 "Pantau pertumbuhan tanaman secara berkala untuk memastikan responnya terhadap pupuk. Jika diperlukan, sesuaikan dosis atau frekuensi aplikasi pupuk untuk hasil yang optimal.",
+            ],
+            image: "gambar pupuk/npk mutiara.jpg",
+            link: "https://id.shp.ee/8PggC83"
+        },
+
+        {
+            id: 3,
+            title: "Mutiara Grower 15-09-20+TE",
+            manfaat:  [
+                "Pupuk ini mengandung Amonium-Nitrogen (NH4), yang secara perlahan tersedia sebagai cadangan.",
+                "pertumbuhan tanaman lebih cepat dan hasil panen lebih banyak. Sumber Nitrogen yang efisien dapat mengurangi kehilangan hara ke lingkungan.",
+            ],
+            panduan: [
+                "Taburkan NPK sebanyak 1/2 sendok teh atau 1 sendok teh (paling banyak) pada area tanaman hingga rata.", 
+                 "Jangan taburkan pupuk melebihi dosis (membuat tanaman overdosis).",
+                 "Lakukan kembali penaburan pupuk jika pupuk NPK sudah habis.",
+
+            ],
+            
+            image: "gambar pupuk/mutiara grower pupuk.jpg",
+            link: "https://id.shp.ee/xJ9ZbwZ"
+        },
+
+        {
+
+            id: 4,
+            title: "Pupuk Pak Tani 16-16-16",
+            manfaat: [
+              "menghijaukan daun.",
+              "hasil panen meningkat.",
+              "meningkatkan pertumbuhan tunas.",
+            ],
+            panduan: [
+                "Taburkan NPK sebanyak 1/2 sendok teh atau 1 sendok teh (paling banyak) pada area tanaman hingga rata.",
+                " Jangan taburkan pupuk melebihi dosis (membuat tanaman overdosis).",
+                "Lakukan kembali penaburan pupuk jika pupuk NPK sudah habis.",
+            ],        
+            image: "gambar pupuk/pak tani pupuk.jpg.",
+            link: "https://id.shp.ee/yKZfV1L"
+        },
+
+        {
+
+            id: 5,
+            title: "Pupuk Cair Bio-Organik",
+            manfaat: [
+                "mengandung banyak unsur hara makro, mikro, hormon, dan asam amino yang dibutuhkan tanaman.",
+                "memperbaiki kesuburan tanah sehingga dapat menunjang pertumbuhan dan perkembangan tanaman.",
+            ],
+            panduan: [
+                "Digunakan pada tahap pertumbuhan awal dan pemupukan lanjutanMencampurkan hasil fermentasi pupuk organik cair dengan air bersih.",
+                "Perbandingan antara pupuk cair dan air yaitu 1: 20. Sebagai contoh 50ml Pupuk Organik Cair dicampur dengan air bersih seebanyak 1 liter.",
+            ],
+            image: "gambar pupuk/pupuk cair bioorganik dinosaurus.jpg",
+            link: "https://id.shp.ee/6iJLt21"
+        },
+
+        {
+
+            id: 6,
+            title: "Pupuk Organik Cair POC",
+            manfaat:[
+             "Mengandung usur hara makro dan mikro serta substansi organik hasil metabolism mikroba seperti vitamin dan enzim.",
+             "Dapat menyediakan “makanan” bagi tanah maupun tanaman.",
+             "Mengandung mikroba-mikroba yang sangat berperan dalam kesuburan tanah.",
+             "Dapat menekan organism penyebab penyakit tanaman.",
+            ],
+        
+            panduan:[ 
+            "Penyemprotan dilakukan sebanyak 4 kali dosisnya sama yaitu: 1 liter POC dicampur air 100 liter atau gelas aqua dicampur air 1 tangki.",
+            "Sekali semprot membutuhkan 4 liter, jadi 1 hektar membutuhkan 20 liter.",
+            "Pengaplikasian POC tetap hanya sekedar pelengkap saja.",
+            ],
+
+            image: "gambar pupuk/pupuk cair POC.jpg",
+            link: "https://id.shp.ee/ZtxyCjv"
+        },
+
+        {
+            id: 7,
+            title: "Pupuk Gandasil B- Bunga dan Buah",
+            manfaat:[ 
+            "menjaga kesehatan tanaman buah dan bunga.",
+            " Pupuk Gandasil B dapat menambah daya tahan tanaman sehingga tidak mudah terserang penyakit atau serangan hama yang parah.",
+            " Pupuk Gandaria B juga bisa meningkatkan pembentukan tunas pada bunga yang baru tumbuh.",
+            ], 
+
+            panduan:[
+            "Larutkan sekitar 20-30 gram pupuk gandasil B sebanyak 10 liter air.",
+            "Aduk hingga merata pada tanaman.",
+            "Semprotkan sekali dalam 10 hari pada tanaman yang ingin diberi pupuk. Disarankan pada bagian daun dan rantingnya.",
+            ],
+
+            image: "gambar pupuk/pupuk gandasil B.jpg",
+            link: "https://id.shp.ee/Cyuq4S2"
+        },
+
+        {
+            id: 8,
+            title: "Pupuk Kompos Organik Kascing Vermicompost",
+            manfaat:[
+                "Memperbaiki sifat tanah seperti memperbaiki struktur, porositas, permeabilitas.",
+                "Meningkatkan kemampuan untuk menahan air.",  
+            ], 
+            panduan: [ 
+                "Campurkan pupuk dan media tanam/tanah dengan perbandingan minimal 1:3.",
+                "Sirami tanaman menggunakan air 2 kali sehari.",
+            ],
+
+            image: "gambar pupuk/pupuk kompos organik kascing.jpg",
+            link: "https://id.shp.ee/KM5Uows"
+        },
+
+        {
+
+            id: 9,
+            title: "Pupuk UrePupuk NPK Phonska Plus 15-15-15a",
+            manfaat:[
+                "Membantu meningkatkan kandungan klorofil pada daun yang membuat tanaman menjadi mudah berfotosintesis.",
+                "Membuat pembentukan gula dan pati menjadi lebih lancar.",
+                "Meningkatkan pertumbuhan dari tanaman akar yang membuat tanaman menjadi lebih mudah menyerap unsur hara dan air menjadi lebih banyak serta memaksimalkan hasil panen.",
+            ],
+
+         
+            panduan: [
+                "Pupuk dapat di gunakan hanya dengan menaburkan pupuk pada tanaman secara merata.",
+                "Kemudian siram sampai butiran pupuk larut.",
+                "Waktu terbaik untuk memberikan pupuk yaitu saat pagi atau sore hari.",
+            ],
+            image: "gambar pupuk/pupuk npk phonska.jpg",
+            link: "https://id.shp.ee/Lu7ZsHJ"
+        },
+
+        {
+            
+            id: 10,
+            title: "Pupuk Organik Super Aktif (Original)",
+            manfaat:[
+                 "Manfaat pupuk organik  super aktif yaitu meningkatkan kesuburan dan menyeimbangkan pH tanah.",
+                 "Mengandung unsur hara lengkap sehingga tanaman tak gampang sakit dan hasil panen maksimal.",
+            ],
+            panduan:[
+                 "Mencampurkan produk dengan 1 liter air untuk dijadikan biang pupuk.",
+                 "Lalu disemprotkan merata ke permukaan bawah daun.",
+            ],
+            image: "gambar pupuk/pupuk organik super akti.jpg",
+            link: "https://id.shp.ee/btMxRSn"
+        },
+    ];
+
+    // Fungsi untuk mengambil ID produk dari URL
+    function getProductIdFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        return parseInt(params.get('id'));
+    }
+
+    // Fungsi untuk menampilkan detail produk
+    function displayProductDetails() {
+        const productId = getProductIdFromUrl();
+        const product = products.find(p => p.id === productId);
+
+        if (product) {
+            console.log("Product found:", product); // Debug: Check the entire product object
+            console.log("Manfaat:", product.manfaat); // Debug: Check manfaat
+            console.log("Panduan:", product.panduan); // Debug: Check panduan
+
+            document.getElementById('productTitle').textContent = product.title;
+            document.getElementById('productImage').src = product.image;
+
+            // Create an ordered list for the manfaat
+            const manfaatContainer = document.getElementById('productManfaat');
+            manfaatContainer.innerHTML = ""; // Clear previous content
+            const ol = document.createElement('ol');
+            product.manfaat.forEach(m => {
+                const li = document.createElement('li');
+                li.textContent = m;
+                ol.appendChild(li);
+            });
+            manfaatContainer.appendChild(ol);
+
+            document.getElementById('productPanduan').textContent = product.panduan;
+            document.getElementById('productLink').href = product.link;
+        } else {
+            document.body.innerHTML = '<p>Produk tidak ditemukan.</p>';
+        }
+    }
+
+    // Panggil fungsi untuk menampilkan detail saat halaman dimuat
+    window.onload = displayProductDetails;
+</script>
+
+</body>
+</html>
