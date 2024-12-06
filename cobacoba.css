@@ -32,6 +32,7 @@ header {
     text-align:left;
     color: black;
     padding: 100px;
+    padding-bottom: 0;
 }
 
 .desk3 {
@@ -55,8 +56,9 @@ header {
 .hero {
     text-align: center;
     padding: 100px 10px;
-    background-image: url('gambar pupuk/header 2.jpg');
-    background-size:auto ;
+    background-image: url('https://i.pinimg.com/736x/99/a5/b4/99a5b4d965e58ba3022662fd8ca26396.jpg');
+    background-size:cover;
+    background-position: center;
 
 }
 
@@ -66,7 +68,7 @@ header {
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 /* About Us Section */
