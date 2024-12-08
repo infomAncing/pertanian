@@ -6,6 +6,9 @@
     <title>Pupuk Rani - Solusi Pupuk Terbaik untuk Pertanian Anda</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pertanian\owl\assets\owl.carousel.min.css">
+    <link rel="stylesheet" href="pertanian\owl\assets\owl.theme.default.min.css">
+
 </head>
 <body>
     <header>
@@ -52,15 +55,14 @@
         <section id="rekomendasi" class="recommendations">
             <div class="container">
                 <h2>Rekomendasi Pupuk Terbaik</h2>
-                <div id="productContainer" class="grid">
+                <div id="productContainer" class="owl-carousel owl-theme">
                     <!-- Produk pupuk akan dimuat secara dinamis -->
                 </div>
             </div>
         </section>
-
         <section id="about" class="section">
             <div class="container">
-                <h2>Tentang Pupuk Kaltim</h2>
+                <h2>Tentang Pupuk Kami</h2>
                 <div class="about-content">
                     <img src="/api/placeholder/400/300" alt="Tentang Kami" class="about-image">
                     <div class="about-text">
@@ -76,7 +78,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Hubungi Kami</h4>
-                <p>Email: info@pupukkaltim.com</p>
+                <p>Email: info@pupuk.com</p>
                 <p>Telepon: (0542) 123456</p>
             </div>
             <div class="footer-section">
@@ -95,10 +97,18 @@
             </div>
         </div>
         <div class="copyright">
-            © 2024 Pupuk Kaltim. Hak Cipta Dilindungi.
+            © 2024 Pupuk rani. Hak Cipta Dilindungi.
         </div>
     </footer>
-
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span> <!-- Tombol untuk menutup modal -->
+            <div id="productModalDetails"></div> <!-- Bagian untuk detail produk -->
+        </div>
+    </div>
     <script src="script.js"></script>
+    <script src="pertanian\owl\jquery-3.7.1.js"></script>
+    <script src="pertanian\owl\owl.carousel.min.js"></script>
+
 </body>
 </html>

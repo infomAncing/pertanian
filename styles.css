@@ -293,3 +293,111 @@ footer {
         text-align: center;
     }
 }
+/* Pastikan .owl-carousel diatur dengan benar */
+.owl-carousel {
+    display: flex !important;  /* Menjamin carousel tampil horizontal */
+    flex-wrap: nowrap;
+}
+
+.owl-carousel .item {
+    display: inline-block;
+    width: 100%;  /* Pastikan item memiliki lebar yang sesuai */
+}
+
+
+.product-card {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card-content {
+    height:fit-content;
+}
+.product-card-content h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-card-content .price {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #28a745;
+}
+
+.product-actions button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.product-actions button:hover {
+    background-color: var(--secondary-color);
+}
+
+.product-modal-info button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.product-modal-info button:hover {
+    background-color: var(--secondary-color);
+}
+/* Modal container */
+.modal {
+    display: none; /* Modal disembunyikan secara default */
+    position: fixed;
+    z-index: 1; /* Pastikan modal muncul di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Latar belakang transparan */
+    overflow: auto; /* Agar modal bisa digulir jika terlalu besar */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Lebar modal, bisa disesuaikan */
+    max-width: 600px; /* Max width agar tidak terlalu lebar */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol close */
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
