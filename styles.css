@@ -6,16 +6,16 @@
 }
 
 :root {
-    --primary-color: #2E7D32;       /* Dark Green */
+    --primary-color: #ACBAA1;       /* Dark Green */
     --secondary-color: #4CAF50;     /* Green */
-    --accent-color: #FFC107;        /* Amber */
+    --accent-color: #FCE0E8;        /* Amber */
     --text-primary: #333333;
     --text-secondary: #666666;
     --background-light: #F5F5F5;
 }
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'helvetica', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--background-light);
@@ -23,16 +23,14 @@ body {
 
 /* Navigation Styles */
 header {
-    background-color: var(--primary-color);
-    position: fixed;
+    position:fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
-.navbar {
+navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -316,7 +314,7 @@ footer {
 
 .product-card img {
     width: 100%;
-    height: auto;
+    height: 100;
     border-radius: 8px;
 }
 
@@ -382,7 +380,7 @@ footer {
     border: 1px solid #888;
     width: 80%; /* Lebar modal, bisa disesuaikan */
     max-width: 600px; /* Max width agar tidak terlalu lebar */
-    border-radius: 8px;
+    border-radius: 8px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -391,7 +389,7 @@ footer {
     color: #aaa;
     float: right;
     font-size: 28px;
-    font-weight: bold;
+    font-weight:normal;
 }
 
 .close-modal:hover,

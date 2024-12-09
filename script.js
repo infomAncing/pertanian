@@ -3,59 +3,140 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 1,
             name: 'NPK Mutiara 16-16-16',
-            description: 'Pupuk dengan komposisi seimbang untuk berbagai jenis tanaman. Mengandung nitrogen, fosfor, dan kalium dalam perbandingan yang optimal untuk mendukung pertumbuhan tanaman secara menyeluruh.',
-            longDescription: 'NPK Mutiara 16-16-16 adalah pupuk majemuk dengan keseimbangan nutrisi yang sempurna. Dengan kandungan Nitrogen, Fosfor, dan Kalium masing-masing 16%, pupuk ini cocok untuk berbagai jenis tanaman pertanian. Nitrogen membantu pertumbuhan daun dan batang, Fosfor mendukung perkembangan akar dan pembungaan, sementara Kalium meningkatkan ketahanan tanaman terhadap penyakit.',
-            image: '/api/placeholder/250/250',
-            price: 'Rp 250.000 / 50kg',
+            description:'',
+            longDescription: 'Pupuk dengan komposisi seimbang untuk berbagai jenis tanaman. Mengandung nitrogen, fosfor, dan kalium dalam perbandingan yang optimal untuk mendukung pertumbuhan tanaman secara menyeluruh. NPK Mutiara 16-16-16 adalah pupuk majemuk dengan keseimbangan nutrisi yang sempurna. Dengan kandungan Nitrogen, Fosfor, dan Kalium masing-masing 16%, pupuk ini cocok untuk berbagai jenis tanaman pertanian. Nitrogen membantu pertumbuhan daun dan batang, Fosfor mendukung perkembangan akar dan pembungaan, sementara Kalium meningkatkan ketahanan tanaman terhadap penyakit.',
+            image: 'gambar pupuk/npk mutiara.jpg',
+            price: 'Rp 21.100,00',
             benefits: [
                 'Komposisi seimbang',
                 'Cocok untuk berbagai tanaman',
                 'Meningkatkan pertumbuhan optimal'
             ],
-            link: 'https://www.tokopedia.com/pupuk-urea-50-kg'
+            link: 'https://id.shp.ee/8PggC83'
         },
         {
             id: 2,
-            name: 'Pupuk Organik Super',
-            description: 'Pupuk ramah lingkungan dengan nutrisi lengkap untuk pertumbuhan tanaman yang sehat.',
-            longDescription: 'Pupuk Organik Super merupakan solusi terbaik untuk pertanian berkelanjutan. Diproduksi dari bahan-bahan alami yang telah melalui proses pengolahan khusus, pupuk ini kaya akan mikronutrien dan mikroorganisme yang bermanfaat bagi kesehatan tanah dan tanaman.',
-            image: '/api/placeholder/250/250',
-            price: 'Rp 150.000 / 40kg',
+            name: 'Mutiara Grower 15-09-20+TE',
+            description: '',
+            longDescription: 'Pupuk ini mengandung Amonium-Nitrogen NH4 yang secara perlahan tersedia sebagai cadangan. Pertumbuhan tanaman lebih cepat dan hasil panen lebih banyak. Sumber Nitrogen yang efisien dapat mengurangi kehilangan hara ke lingkungan.',
+            image: 'gambar pupuk/mutiara grower pupuk.jpg',
+            price: 'Rp 20.500,00',
             benefits: [
                 'Ramah lingkungan',
                 'Menyuburkan tanah',
                 'Mengandung mikronutrien lengkap'
             ],
-            link: 'https://www.tokopedia.com/pupuk-organik-super-40-kg'
+            link: 'https://id.shp.ee/oHF18Kj'
         },
         {
             id: 3,
-            name: 'Pupuk Nitrogen Cair',
-            description: 'Pupuk cair untuk pertumbuhan daun dan batang optimal.',
-            longDescription: 'Pupuk Nitrogen Cair dirancang khusus untuk mendukung fase pertumbuhan vegetatif tanaman. Dengan konsentrasi nitrogen tinggi, pupuk ini membantu mempercepat pertumbuhan daun hijau, memperkuat batang, dan meningkatkan kemampuan fotosintesis tanaman.',
-            image: '/api/placeholder/250/250',
-            price: 'Rp 100.000 / 20L',
+            name: 'Pupuk Pak tani 16-16-16',
+            description: '',
+            longDescription: 'Pupuk majemuk berbentuk butiran yang mengandung unsur hara utama Nitrogen (N), Fosfor (P), dan Kalium (K). Cocok digunakan pada berbagai jenis tanaman seperti padi, jagung, sayuran, dan buah-buahan, pupuk ini mudah larut dalam air sehingga cepat diserap oleh tanaman.',
+            image: 'gambar pupuk/pak tani pupuk.jpg',
+            price: 'Rp 21.000,00',
             benefits: [
-                'Cepat diserap tanaman',
-                'Meningkatkan pertumbuhan daun',
-                'Mudah diaplikasikan'
+                'Meningkatkan pertumbuhan tunas',
+                'Menghijaukan daun',
+                'Hasil panen meningkat'
             ],
-            link: 'https://www.tokopedia.com/pupuk-nitrogen-cair-20-liter'
+            link: 'https://id.shp.ee/xJ9ZbwZ'
         },
         {
             id: 4,
-            name: 'Pupuk Kalium Khusus',
-            description: 'Pupuk khusus untuk meningkatkan ketahanan dan kualitas buah.',
-            longDescription: 'Pupuk Kalium Khusus dikembangkan untuk fase generatif tanaman. Kandungan kalium tinggi membantu meningkatkan ketahanan tanaman terhadap penyakit, memperbaiki kualitas buah, dan mendukung proses pembentukan bunga dan buah.',
-            image: '/api/placeholder/250/250',
-            price: 'Rp 300.000 / 50kg',
+            name: 'Pupuk cair bio organik',
+            description: '',
+            longDescription: 'Pupuk ini terbuat dari bahan organik yang diperkaya dengan mikroorganisme aktif. Fungsinya untuk meningkatkan kesuburan tanah, memperbaiki struktur tanah, dan menyediakan nutrisi alami bagi tanaman.',
+            image: 'gambar pupuk/pupuk cair bioorganik dinosaurus.jpg',
+            price: 'Rp 45.000,00',
             benefits: [
-                'Meningkatkan kualitas buah',
-                'Memperkuat ketahanan tanaman',
-                'Optimal untuk fase generatif'
+                'memperbaiki kesuburan tanah ',
+                'mengandung banyak unsur hara',
             ],
-            link: 'https://www.tokopedia.com/pupuk-kalium-khusus-15-kg'
-        }
+            link: 'https://id.shp.ee/yKZfV1L'
+        },
+        {
+            id: 5,
+            name: 'Pupuk Organik POC',
+            description: '',
+            longDescription: 'Pupuk berbahan dasar organik yang difermentasi menjadi bentuk cair. POC mudah diserap tanaman melalui daun dan akar, meningkatkan pertumbuhan vegetatif dan generatif, serta mempercepat pemulihan tanah.',
+            image: 'gambar pupuk/pupuk cair POC.jpg',
+            price: 'Rp 24.000,00',
+            benefits: [
+                'Mengandung unsur hara makro dan mikro',
+                'Dapat menyediakan makanan bagi tanah dan tanaman',
+                'Dapat menekan organisme penyebab penyakit tanaman'
+            ],
+            link: 'https://id.shp.ee/6iJLt21'
+        },
+        {
+            id: 6,
+            name: 'Pupuk Gandasil B',
+            description: '',
+            longDescription: 'Pupuk daun yang kaya akan unsur hara makro dan mikro, diformulasikan khusus untuk fase generatif tanaman. Cocok untuk meningkatkan pembungaan dan pembuahan tanaman hortikultura seperti sayuran dan buah-buahan.',
+            image: 'gambar pupuk/pupuk gandasil B.jpg',
+            price: 'Rp 13.000,00',
+            benefits: [
+                'Menjaga kesehatan tanaman',
+                'Menambah daya tahan tanaman',
+                'Meningkatkan pembentukan tunas'
+            ],
+            link: 'https://id.shp.ee/ZtxyCjv'
+        },
+        {
+            id: 7,
+            name: 'Pupuk Kompos Organik Kascing',
+            description: '',
+            longDescription: 'Dari proses pencernaan organik oleh cacing tanah, pupuk ini kaya akan nutrisi alami. Kompos kascing meningkatkan kesuburan tanah, menstabilkan pH, dan mendukung pertumbuhan akar tanaman.',
+            image: 'gambar pupuk/pupuk kompos organik kascing.jpg',
+            price: 'Rp 18.300,00',
+            benefits: [
+                'Memperbaiki sifat tanah seperti strukturnya',
+                'Meningkatkan kemampuan untuk menahan air ',
+            ],
+            link: 'https://id.shp.ee/Cyuq4S2'
+        },
+        {
+            id: 8,
+            name: 'Pupuk Grow More',
+            description: '',
+            longDescription: 'Daun berbentuk kristal dengan kandungan hara seimbang atau spesifik sesuai kebutuhan tanaman. Tersedia dalam berbagai formulasi, cocok untuk mendukung pertumbuhan, pembungaan, dan pembuahan.',
+            image: 'gambar pupuk/pupuk npk grow more.jpg',
+            price: 'Rp 70.000,00',
+            benefits: [
+                'Mempercepat pertumbuhan akar ',
+                'Mempercepat pertumbuhan bunnga dan buah',
+            ],
+            link: 'https://id.shp.ee/KM5Uows'
+        },
+        {
+            id: 9,
+            name: 'Pupuk NPK Phonska',
+            description: '',
+            longDescription: 'Pupuk NPK Phonska adalah pupuk majemuk yang mengandung Nitrogen, Fosfor, dan Kalium dengan tambahan unsur belerang (S). Cocok digunakan untuk semua jenis tanaman, membantu meningkatkan pertumbuhan dan hasil panen dengan efisiensi tinggi.',
+            image: 'gambar pupuk/pupuk npk phonska.jpg',
+            price: 'Rp 19.500,00',
+            benefits: [
+                'Membantu meningkatkan kandungan klorofil pada daun',
+                'Membuat pembentukan gula dan pati',
+                'Meningkatkan pertumbuhan'
+            ],
+            link: 'https://id.shp.ee/Lu7ZsHJ'
+        },
+        {
+            id: 10,
+            name: 'Pupuk Organik Super Aktif',
+            description: '',
+            longDescription: 'Cocok untuk berbagai jenis tanaman, termasuk sayuran, buah-buahan, dan tanaman pangan, pupuk ini mendukung pertanian ramah lingkungan dengan hasil panen yang berkualitas.',
+            image: 'gambar pupuk/pupuk organik super akti.jpg',
+            price: 'Rp 45.000,00',
+            benefits: [
+                'Meningkatkan kesuburan tanah',
+                'Menyeimbangkan pH tanah',
+                'Mengandung unsur hara maksimal'
+            ],
+            link: 'https://id.shp.ee/btMxRSn'
+        },
     ];
 
     const productContainer = document.getElementById('productContainer');
