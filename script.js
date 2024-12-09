@@ -120,6 +120,11 @@ document.addEventListener('DOMContentLoaded', function() {
         productContainer.appendChild(createProductCard(product));
     });
 
+    function displayProducts() {
+        const container = document.getElementById('productContainer');
+        container.innerHTML = products.map(product => createProductCard(product)).join('');
+    }
+    
     // Fungsi untuk menampilkan detail produk di modal
     window.showProductDetails = function (productId) {
         const product = products.find(p => p.id === productId);
