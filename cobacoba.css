@@ -9,13 +9,13 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('');
     background-size: cover;
-    color: white;
+    color: rgb(34, 25, 25);
 }
 
 /* Header dan Navigasi */
 header {
     text-align: center;
-    background: rgb(82, 82, 82);
+    background: white(192, 196, 197);
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -73,7 +73,7 @@ header {
 
 /* About Us Section */
 #about {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #333;
     padding: 40px 20px;
     text-align: center;
