@@ -55,7 +55,35 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Optimal untuk fase generatif'
             ],
             link: 'https://www.tokopedia.com/pupuk-kalium-khusus-15-kg'
-        }
+        },
+        {
+            id: 5,
+            name: 'Pupuk Nitrogen Cair',
+            description: 'Pupuk cair untuk pertumbuhan daun dan batang optimal.',
+            longDescription: 'Pupuk Nitrogen Cair dirancang khusus untuk mendukung fase pertumbuhan vegetatif tanaman. Dengan konsentrasi nitrogen tinggi, pupuk ini membantu mempercepat pertumbuhan daun hijau, memperkuat batang, dan meningkatkan kemampuan fotosintesis tanaman.',
+            image: '/api/placeholder/250/250',
+            price: 'Rp 100.000 / 20L',
+            benefits: [
+                'Cepat diserap tanaman',
+                'Meningkatkan pertumbuhan daun',
+                'Mudah diaplikasikan'
+            ],
+            link: 'https://www.tokopedia.com/pupuk-nitrogen-cair-20-liter'
+        },
+        {
+            id: 6,
+            name: 'Pupuk Nitrogen Cair',
+            description: 'Pupuk cair untuk pertumbuhan daun dan batang optimal.',
+            longDescription: 'Pupuk Nitrogen Cair dirancang khusus untuk mendukung fase pertumbuhan vegetatif tanaman. Dengan konsentrasi nitrogen tinggi, pupuk ini membantu mempercepat pertumbuhan daun hijau, memperkuat batang, dan meningkatkan kemampuan fotosintesis tanaman.',
+            image: '/api/placeholder/250/250',
+            price: 'Rp 100.000 / 20L',
+            benefits: [
+                'Cepat diserap tanaman',
+                'Meningkatkan pertumbuhan daun',
+                'Mudah diaplikasikan'
+            ],
+            link: 'https://www.tokopedia.com/pupuk-nitrogen-cair-20-liter'
+        },
     ];
 
     const productContainer = document.getElementById('productContainer');
@@ -160,17 +188,16 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-    $(document).ready(function () {
-        $("#productContainer").owlCarousel({
-            items: 3,  // Jumlah produk per slide
-            loop: true, // Mengaktifkan loop untuk carousel
-            margin: 10, // Margin antar item
-            nav: true,  // Menampilkan tombol navigasi
-            responsive: {
-                0: { items: 1 },
-                600: { items: 2 },
-                1000: { items: 3 }
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        items: 2,
+        loop: true,
+        margin: 10,
+        dots: true,           // Enable bullet navigation
+        responsive: {
+            600: {
+                items: 4
             }
-        });
+        }
     });
     
