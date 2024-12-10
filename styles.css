@@ -6,16 +6,16 @@
 }
 
 :root {
-    --primary-color: #ACBAA1;       /* Dark Green */
-    --secondary-color: #4CAF50;     /* Green */
+    --primary-color:#77815c;       /* Dark Green */
+    --secondary-color: #D0D9B3;     /* Green */
     --accent-color: #FCE0E8;        /* Amber */
-    --text-primary: #333333;
-    --text-secondary: #666666;
+    --text-primary: #000000;
+    --text-secondary: #A39D97;
     --background-light: #F5F5F5;
 }
 
 body {
-    font-family: 'century gothic', Arial, sans-serif;
+    font-family: 'century gotic', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--background-light);
@@ -40,7 +40,7 @@ header {
 }
 
 .logo img {
-    max-height: 50px;
+    max-height: 40px;
 }
 
 .nav-links {
@@ -49,7 +49,7 @@ header {
 }
 
 .navbar a {
-    color: white;
+    color: rgb(248, 250, 246);
     text-decoration: none;
     margin: 0 15px;
     font-weight: 500;
@@ -87,10 +87,10 @@ header {
 
 /* Hero Section */
 .hero {
-    background: url('gambar pupuk/Descargar verde naturaleza en difuminar fondo, hermosa naturaleza como primavera fondo de pantalla_ generativo ai gratis.jpg'), rgba(0, 0, 0, 0.4) ;
+    background: url('gambar pupuk/header_3-transformed.jpeg'), rgba(0, 0, 0, 0.4) ;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: rgb(247, 244, 244);
     text-align: center;
     padding: 200px 20px 100px;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -111,7 +111,7 @@ header {
 .hero p {
     max-width: 800px;
     margin: 0 auto 30px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .cta-button {
@@ -139,7 +139,7 @@ header {
 }
 
 .knowledge-card {
-    background-color: white;
+    background-color: rgb(243, 247, 238);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -185,8 +185,8 @@ header {
 }
 
 .about-content img {
-    max-width: 400px;
-    border-radius: 10px;
+    max-width: 200px;
+    border-radius: 20px;
 }
 
 .about-text {
@@ -296,7 +296,7 @@ footer {
 
 .product-card {
     width: 100%;
-    background-color: #fff;
+    background-color: #f5f8f6;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -321,7 +321,7 @@ footer {
 .product-card-content .price {
     margin-top: 10px;
     font-size: 16px;
-    color: #28a745;
+    color: #d81919;
 }
 
 .product-actions button {

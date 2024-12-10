@@ -178,9 +178,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const product = products.find(p => p.id === productId);
         if (product) {
             modalDetails.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
+                <img src="${product.image}" alt="${product.name}" class="w-100">
                 <div class="product-modal-info">
-                    <h2>${product.name}</h2>
+                    <h2 style="font-size: 25px;">${product.name}</h2>
                     <p class="product-long-description">${product.longDescription}</p>
                     <h3>Keunggulan Produk:</h3>
                     <ul>
