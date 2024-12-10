@@ -184,7 +184,7 @@ header {
     gap: 50px;
 }
 
-.about-image {
+.about-content img {
     max-width: 400px;
     border-radius: 10px;
 }
