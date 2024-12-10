@@ -184,9 +184,9 @@ header {
     gap: 50px;
 }
 
-.about-image {
+.about-content img {
     width: 300px;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .about-text {
@@ -305,7 +305,7 @@ footer {
 }
 
 .product-card img {
-    width: 100%;
+    width: 50%;
     height: 100;
     border-radius: 8px;
 }

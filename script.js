@@ -243,14 +243,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     $(document).ready(function () {
         $("#productContainer").owlCarousel({
-            items: 3,  // Jumlah produk per slide
+            items: 4,  // Jumlah produk per slide
             loop: true, // Mengaktifkan loop untuk carousel
             margin: 10, // Margin antar item
             nav: true,  // Menampilkan tombol navigasi
             responsive: {
-                0: { items: 1 },
-                600: { items: 2 },
-                1000: { items: 3 }
+                0: { items: 2 },
+                600: { items: 3 },
+                1000: { items: 4 }
             }
         });
     });
