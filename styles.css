@@ -8,7 +8,7 @@
 :root {
     --primary-color: #ACBAA1;       /* Dark Green */
     --secondary-color: #4CAF50;     /* Green */
-    --accent-color: #FCE0E8;        /* Amber */
+    --accent-color: #fae779;        /* Amber */
     --text-primary: #333333;
     --text-secondary: #666666;
     --background-light: #F5F5F5;
@@ -87,7 +87,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: url('gambar pupuk/Descargar verde naturaleza en difuminar fondo, hermosa naturaleza como primavera fondo de pantalla_ generativo ai gratis.jpg'), rgba(0, 0, 0, 0.4) ;
+    background: url('gambar pupuk/header_3-transformed.jpeg'), rgba(0, 0, 0, 0.4) ;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -139,7 +139,7 @@ header {
 }
 
 .knowledge-card {
-    background-color: white;
+    background-color: rgb(243, 229, 229);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -185,7 +185,7 @@ header {
 }
 
 .about-image {
-    max-width: 400px;
+    width: 300px;
     border-radius: 10px;
 }
 
@@ -282,6 +282,7 @@ footer {
     .about-image {
         max-width: 100%;
         margin-bottom: 20px;
+        width : 100px;
     }
 
     .footer-content {
