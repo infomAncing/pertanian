@@ -146,9 +146,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createProductCard(product) {
         const card = document.createElement('div');
-        card.classList.add('product-card');
+        card.classList.add('product-card', 'item');
         card.innerHTML = `
-        <div class="product-card">
+        
             <img src="${product.image}" alt="${product.name}">
             <div class="product-card-content">
                 <h3>${product.name}</h3>
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <button onclick="showProductDetails(${product.id})">Lihat Detail</button>
                 </div>
             </div>
-        </div>
+       
     `;
         return card;
     }

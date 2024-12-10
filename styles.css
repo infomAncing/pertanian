@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'helvetica', Arial, sans-serif;
+    font-family: 'century gothic', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--background-light);
@@ -30,7 +30,7 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +87,9 @@ navbar {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: url('gambar pupuk/Descargar verde naturaleza en difuminar fondo, hermosa naturaleza como primavera fondo de pantalla_ generativo ai gratis.jpg'), rgba(0, 0, 0, 0.4) ;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
     padding: 200px 20px 100px;
@@ -291,17 +293,6 @@ footer {
         text-align: center;
     }
 }
-/* Pastikan .owl-carousel diatur dengan benar */
-.owl-carousel {
-    display: flex !important;  /* Menjamin carousel tampil horizontal */
-    flex-wrap: nowrap;
-}
-
-.owl-carousel .item {
-    display: inline-block;
-    width: 100%;  /* Pastikan item memiliki lebar yang sesuai */
-}
-
 
 .product-card {
     width: 100%;
