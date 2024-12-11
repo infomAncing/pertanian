@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'NPK Mutiara 16-16-16',
             description:'',
             longDescription: 'Pupuk dengan komposisi seimbang untuk berbagai jenis tanaman. Mengandung nitrogen, fosfor, dan kalium dalam perbandingan yang optimal untuk mendukung pertumbuhan tanaman secara menyeluruh. NPK Mutiara 16-16-16 adalah pupuk majemuk dengan keseimbangan nutrisi yang sempurna. Dengan kandungan Nitrogen, Fosfor, dan Kalium masing-masing 16%, pupuk ini cocok untuk berbagai jenis tanaman pertanian. Nitrogen membantu pertumbuhan daun dan batang, Fosfor mendukung perkembangan akar dan pembungaan, sementara Kalium meningkatkan ketahanan tanaman terhadap penyakit.',
-            image: 'gambar pupuk/mutiara.png',
+
+            image: 'gambar pupuk/mutiara new.png',
+
             price: 'Rp 21.100,00',
             benefits: [
                 'Komposisi seimbang',
@@ -19,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Mutiara Grower 15-09-20+TE',
             description: '',
             longDescription: 'Pupuk ini mengandung Amonium-Nitrogen NH4 yang secara perlahan tersedia sebagai cadangan. Pertumbuhan tanaman lebih cepat dan hasil panen lebih banyak. Sumber Nitrogen yang efisien dapat mengurangi kehilangan hara ke lingkungan.',
-            image: 'gambar pupuk/mutiaragrower.png',
+
+            image: 'gambar pupuk/mutiara grower new.png',
+
             price: 'Rp 20.500,00',
             benefits: [
                 'Ramah lingkungan',
@@ -74,7 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Pupuk Gandasil B',
             description: '',
             longDescription: 'Pupuk daun yang kaya akan unsur hara makro dan mikro, diformulasikan khusus untuk fase generatif tanaman. Cocok untuk meningkatkan pembungaan dan pembuahan tanaman hortikultura seperti sayuran dan buah-buahan.',
-            image: 'gambar pupuk/gandhasil.png',
+
+            image: 'gambar pupuk/gandasil new.png',
+
             price: 'Rp 13.000,00',
             benefits: [
                 'Menjaga kesehatan tanaman',
@@ -114,7 +120,9 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Pupuk NPK Phonska',
             description: '',
             longDescription: 'Pupuk NPK Phonska adalah pupuk majemuk yang mengandung Nitrogen, Fosfor, dan Kalium dengan tambahan unsur belerang (S). Cocok digunakan untuk semua jenis tanaman, membantu meningkatkan pertumbuhan dan hasil panen dengan efisiensi tinggi.',
-            image: 'gambar pupuk/ponska.png',
+
+            image: 'gambar pupuk/phonska new.png',
+
             price: 'Rp 19.500,00',
             benefits: [
                 'Membantu meningkatkan kandungan klorofil pada daun',
@@ -128,7 +136,9 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Pupuk Organik Super Aktif',
             description: '',
             longDescription: 'Cocok untuk berbagai jenis tanaman, termasuk sayuran, buah-buahan, dan tanaman pangan, pupuk ini mendukung pertanian ramah lingkungan dengan hasil panen yang berkualitas.',
-            image: 'gambar pupuk/superactive.png',
+
+            image: 'gambar pupuk/pupuk organik new.png',
+
             price: 'Rp 45.000,00',
             benefits: [
                 'Meningkatkan kesuburan tanah',
@@ -243,14 +253,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     $(document).ready(function () {
         $("#productContainer").owlCarousel({
-            items: 3,  // Jumlah produk per slide
+            items: 4,  // Jumlah produk per slide
             loop: true, // Mengaktifkan loop untuk carousel
             margin: 10, // Margin antar item
             nav: true,  // Menampilkan tombol navigasi
             responsive: {
-                0: { items: 1 },
-                600: { items: 2 },
-                1000: { items: 3 }
+                0: { items: 2 },
+                600: { items: 3 },
+                1000: { items: 4 }
             }
         });
     });
